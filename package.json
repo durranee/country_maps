@@ -1,0 +1,25 @@
+{
+  "name": "country_maps",
+  "version": "1.0.0",
+  "description": "country maps app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/durranee/country_maps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/durranee/country_maps/issues"
+  },
+  "homepage": "https://github.com/durranee/country_maps#readme",
+  "devDependencies": {
+    "jasmine": "^3.1.0"
+  },
+  "dependencies": {
+    "datamaps": "^0.5.9",
+  }
+}
