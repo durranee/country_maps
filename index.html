@@ -10,7 +10,26 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
 
-    <div id="container" style="position: relative; width: 500px; height: 300px;"></div>
+    <div id="container" style="position: relative; width: 1000px; height: 600px;"></div>
+
+    <div id="country-details">
+      <div id="country-name">
+        Name: <span id="name"></span>
+      </div>
+      <div id="country-capital">
+        Capital: <span id= "capital"></span>
+      </div>
+      <div class="country-currency">
+        Currency: <span id="currency"></span>
+      </div>
+      <div class="country-population">
+        Population: <span id="population"></span>
+      </div>
+      <div class="country-flag">
+        Flag: <span id="flag"></span>
+      </div>
+    </div>
+
     <script src="src/map.js"></script>
   </body>
 </html>
