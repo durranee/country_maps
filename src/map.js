@@ -3,7 +3,8 @@ var basic = new Datamap({
   done: function(datamap) {
     datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
       country_id = geography.id;
-      details = getData(country_id)
+      api_link = getAPILink(country_id);
+      details = getData(api_link)
         .then(function(details) {
           console.log(details);
           updatePage(details);
@@ -12,8 +13,11 @@ var basic = new Datamap({
   }
 });
 
-function getData(country_id) {
-  api_link = `https://restcountries.eu/rest/v2/alpha/${country_id}`
+function getAPILink(country_id) {
+  return `https://restcountries.eu/rest/v2/alpha/${country_id}`
+}
+
+function getData(api_link) {
   data = fetch(api_link)
     .then(function(response) {
       return response.json();
